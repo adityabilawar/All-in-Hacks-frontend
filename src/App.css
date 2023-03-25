@@ -1,42 +1,9 @@
-/* .graphicimg {
-  width: 100vw;
-  height: 100vh;
-  -webkit-clip-path: polygon(0 0, 75% 0, 0 75%);
-} */
-
-/* .bg-img {
-  The image used
-  background-image: url("./graphic.png");
-
-  Control the height of the image
-  min-height: 380px;
-  height: 100%;
-  width: 40%;
-
-  Center and scale the image nicely
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-} */
-
-/* .login-main {
-  display: flex;
-  flex-direction: row;
-  height: 100%;
-  width: 100%;
-} */
-
-.login-sec {
-  height: 100%;
-  width: 60%;
-  background: #1D203E;
-  display: flex;
-  justify-content: center;
-}
-
 .login-container {
   border: 5px solid;
   border-image-slice: 1;
   border-image-source: linear-gradient(to bottom right, #01B7C5, #C417E0);
+}
+
+.login-btn {
+  background: linear-gradient(to bottom right, #01B7C5, #C417E0);
 }
