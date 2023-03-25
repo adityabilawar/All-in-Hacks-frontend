@@ -4,28 +4,28 @@
   -webkit-clip-path: polygon(0 0, 75% 0, 0 75%);
 } */
 
-.bg-img {
-  /* The image used */
+/* .bg-img {
+  The image used
   background-image: url("./graphic.png");
 
-  /* Control the height of the image */
+  Control the height of the image
   min-height: 380px;
   height: 100%;
   width: 40%;
 
-  /* Center and scale the image nicely */
+  Center and scale the image nicely
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-}
+} */
 
-.login-main {
+/* .login-main {
   display: flex;
   flex-direction: row;
   height: 100%;
   width: 100%;
-}
+} */
 
 .login-sec {
   height: 100%;
@@ -36,10 +36,6 @@
 }
 
 .login-container {
-  align-self: center;
-  width: 60%;
-  height: 80%;
-  background: #2C2F48;
   border: 5px solid;
   border-image-slice: 1;
   border-image-source: linear-gradient(to bottom right, #01B7C5, #C417E0);
