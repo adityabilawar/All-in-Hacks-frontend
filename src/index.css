@@ -20,13 +20,11 @@ body, html {
 
 body {
   font-family: 'Montserrat', sans-serif;
+  background-color: #1D203E;
 }
 
 input {
-  color: #f1f5f9;
-  border-bottom: 2px solid #e0f2fe;
   background: none;
-  padding: 10px 100px 10px 10px;
 }
 
 input:focus {
