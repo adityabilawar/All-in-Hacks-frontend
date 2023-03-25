@@ -1,38 +1,46 @@
-.App {
-  text-align: center;
+/* .graphicimg {
+  width: 100vw;
+  height: 100vh;
+  -webkit-clip-path: polygon(0 0, 75% 0, 0 75%);
+} */
+
+.bg-img {
+  /* The image used */
+  background-image: url("./graphic.png");
+
+  /* Control the height of the image */
+  min-height: 380px;
+  height: 100%;
+  width: 40%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.login-main {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+}
+
+.login-sec {
+  height: 100%;
+  width: 60%;
+  background: #1D203E;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.login-container {
+  align-self: center;
+  width: 60%;
+  height: 80%;
+  background: #2C2F48;
+  border: 5px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to bottom right, #01B7C5, #C417E0);
 }
