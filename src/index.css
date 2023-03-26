@@ -30,3 +30,7 @@ input {
 input:focus {
   outline: none;
 }
+
+.leads-option::-webkit-scrollbar {
+  display: none;
+}
