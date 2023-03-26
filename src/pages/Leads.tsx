@@ -25,7 +25,7 @@ const LeadsPage = () => {
 			.then(res => setData(res.data))
 			.catch(err => {
 				console.log(err);
-				setStatus('Ran into an error while uploading');
+				setStatus('Error while Uploading');
 			});
 		setStatus('Loading...');
 	}
