@@ -1,3 +1,6 @@
+// import '../index.css';
+// import '../Leads.css';
+
 const LeadsPage = () => {
 	return (
 		<>
