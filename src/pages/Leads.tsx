@@ -23,7 +23,10 @@ const LeadsPage = () => {
 		if(name) formData.append('name', name);
 		axios.post(`${API}/api/upload`, formData)
 			.then(res => setData(res.data))
-			.catch(err => console.log(err));
+			.catch(err => {
+				console.log(err);
+				setStatus('Ran into an error while uploading');
+			});
 		setStatus('Loading...');
 	}
 
@@ -39,12 +42,12 @@ const LeadsPage = () => {
 							<div className="leads-list flex flex-col justify-center gap-5 items-center">
 								{data.map((res: any, ind: any) => (
 									<div className="lead-listing flex w-full h-12 border-t-2 border-solid border-[#1D203E] items-center gap-10" key={ind}>
-										<div className="lead-listing-name text-xl text-blue-100 ml-5 mt-1">
+										<div className="lead-listing-name text-xl text-blue-100 ml-5 mt-1" key={`name-${ind}`}>
 											{res.name}
 										</div>
-										<div className="lead-listing-info flex flex-col mt-4">
-											<div className="lead-listing-position text-lg text-blue-100">{res.position}</div>
-											<div className="lead-listing-company text-lg text-blue-100">{res.company}</div>
+										<div className="lead-listing-info flex flex-col mt-4" key={`info-${ind}`}>
+											<div className="lead-listing-position text-lg text-blue-100" key={`pos-${ind}`}>{res.position}</div>
+											<div className="lead-listing-company text-lg text-blue-100" key={`company-${ind}`}>{res.company}</div>
 										</div>
 									</div>
 								))}
@@ -68,7 +71,7 @@ const LeadsPage = () => {
 						</div>
 					</div>
 					{(data !== null) ? 
-							<div className="leads-options flex flex-wrap gap-10 mt-10 ml-20">
+							<div className="leads-options flex flex-wrap gap-10 mt-10 ml-20 overflow-y-scroll">
 								{data.map((res: any, ind: any) => (
 									<div className="leads-option w-72 max-w-72 h-56 max-h-56 bg-[#2C2F48] overflow-y-scroll flex justify-center p-5 rounded-xl" key={`option-${ind}`}>
 										
