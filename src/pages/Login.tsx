@@ -9,6 +9,7 @@ const LoginPage = () => {
   const submitLogin = () => {
     console.log(name, pass);
 	localStorage.setItem('auth', 'true');
+	localStorage.setItem('fullName', name)
 	window.location.reload();
   }
 
@@ -25,7 +26,7 @@ const LoginPage = () => {
             <div className="login-form flex flex-col gap-5">
               <input 
                 type="text"
-                placeholder="Username"
+                placeholder="Full Name"
                 onChange={e => setName(e.target.value)}
                 value={name}
                 className="loginInput p-2 pr-24 text-xl text-[#f1f5f9] border-b-2 border-solid border-[#e0f2fe] focus:border-[#818cf8]"
