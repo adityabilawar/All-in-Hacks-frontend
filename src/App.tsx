@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import LeadsPage from './pages/Leads';
 import LoginPage from './pages/Login';
 
 function App() {
@@ -17,9 +18,7 @@ function App() {
 
   else if(auth) {
     return (
-      <>
-        Logged In
-      </>
+      <LeadsPage />
     )
   }
 
