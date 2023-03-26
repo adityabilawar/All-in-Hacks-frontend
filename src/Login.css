@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .login-container {
   border: 5px solid;
   border-image-slice: 1;
